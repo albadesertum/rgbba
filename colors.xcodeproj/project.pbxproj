@@ -30,7 +30,14 @@
 		C706140425D8763400B8AEB8 /* BooleanOperable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C706140025D8763400B8AEB8 /* BooleanOperable.swift */; };
 		C706140625D8769100B8AEB8 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C706140525D8769100B8AEB8 /* Routable.swift */; };
 		C7804DFB25D8509F00CB4466 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7804DFA25D8509F00CB4466 /* main.swift */; };
-		C7804E0225D8510000CB4466 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7804E0125D8510000CB4466 /* Color.swift */; };
+		C795EE6B25DAACEB0088AB0F /* RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = C795EE6A25DAACEB0088AB0F /* RGBA.swift */; };
+		C795EE6E25DAAD340088AB0F /* RGBAKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C795EE6D25DAAD340088AB0F /* RGBAKeys.swift */; };
+		C795EE7125DAAD600088AB0F /* RGBA+CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = C795EE7025DAAD600088AB0F /* RGBA+CustomStringConvertible.swift */; };
+		C795EE7425DAADBA0088AB0F /* RGBA+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C795EE7325DAADBA0088AB0F /* RGBA+Hashable.swift */; };
+		C795EE7725DAADD20088AB0F /* RGBA+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C795EE7625DAADD20088AB0F /* RGBA+Equatable.swift */; };
+		C795EE7A25DAB0D50088AB0F /* RGBA+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C795EE7925DAB0D50088AB0F /* RGBA+Color.swift */; };
+		C795EE7D25DAB1400088AB0F /* Color+RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = C795EE7C25DAB1400088AB0F /* Color+RGBA.swift */; };
+		C795EE8025DAB1890088AB0F /* RGBA+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C795EE7F25DAB1890088AB0F /* RGBA+Operation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -70,7 +77,14 @@
 		C706140525D8769100B8AEB8 /* Routable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
 		C7804DF725D8509F00CB4466 /* colors */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = colors; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7804DFA25D8509F00CB4466 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		C7804E0125D8510000CB4466 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		C795EE6A25DAACEB0088AB0F /* RGBA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBA.swift; sourceTree = "<group>"; };
+		C795EE6D25DAAD340088AB0F /* RGBAKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBAKeys.swift; sourceTree = "<group>"; };
+		C795EE7025DAAD600088AB0F /* RGBA+CustomStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RGBA+CustomStringConvertible.swift"; sourceTree = "<group>"; };
+		C795EE7325DAADBA0088AB0F /* RGBA+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RGBA+Hashable.swift"; sourceTree = "<group>"; };
+		C795EE7625DAADD20088AB0F /* RGBA+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RGBA+Equatable.swift"; sourceTree = "<group>"; };
+		C795EE7925DAB0D50088AB0F /* RGBA+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RGBA+Color.swift"; sourceTree = "<group>"; };
+		C795EE7C25DAB1400088AB0F /* Color+RGBA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+RGBA.swift"; sourceTree = "<group>"; };
+		C795EE7F25DAB1890088AB0F /* RGBA+Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RGBA+Operation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,7 +223,7 @@
 		C7804DF925D8509F00CB4466 /* colors */ = {
 			isa = PBXGroup;
 			children = (
-				C7804E0125D8510000CB4466 /* Color.swift */,
+				C795EE6925DAACD20088AB0F /* RGBA */,
 				C7804DFA25D8509F00CB4466 /* main.swift */,
 				C706140525D8769100B8AEB8 /* Routable.swift */,
 				C70613FA25D8763400B8AEB8 /* Common */,
@@ -218,6 +232,37 @@
 				C70613DF25D8749500B8AEB8 /* Node */,
 			);
 			path = colors;
+			sourceTree = "<group>";
+		};
+		C795EE6925DAACD20088AB0F /* RGBA */ = {
+			isa = PBXGroup;
+			children = (
+				C795EE6A25DAACEB0088AB0F /* RGBA.swift */,
+				C795EE8825DAB1CD0088AB0F /* Enums */,
+				C795EE8725DAB1BB0088AB0F /* Extensions */,
+			);
+			path = RGBA;
+			sourceTree = "<group>";
+		};
+		C795EE8725DAB1BB0088AB0F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C795EE7C25DAB1400088AB0F /* Color+RGBA.swift */,
+				C795EE7925DAB0D50088AB0F /* RGBA+Color.swift */,
+				C795EE7025DAAD600088AB0F /* RGBA+CustomStringConvertible.swift */,
+				C795EE7625DAADD20088AB0F /* RGBA+Equatable.swift */,
+				C795EE7325DAADBA0088AB0F /* RGBA+Hashable.swift */,
+				C795EE7F25DAB1890088AB0F /* RGBA+Operation.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C795EE8825DAB1CD0088AB0F /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				C795EE6D25DAAD340088AB0F /* RGBAKeys.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,7 +323,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C795EE6E25DAAD340088AB0F /* RGBAKeys.swift in Sources */,
+				C795EE7425DAADBA0088AB0F /* RGBA+Hashable.swift in Sources */,
 				C70613F325D8749600B8AEB8 /* Node+Equatable.swift in Sources */,
+				C795EE8025DAB1890088AB0F /* RGBA+Operation.swift in Sources */,
 				C7804DFB25D8509F00CB4466 /* main.swift in Sources */,
 				C70613F925D8749600B8AEB8 /* Index+CustomStringConvertible.swift in Sources */,
 				C70613EF25D8749600B8AEB8 /* Matrix+Codable.swift in Sources */,
@@ -288,15 +336,19 @@
 				C70613EA25D8749500B8AEB8 /* MatrixKeys.swift in Sources */,
 				C70613F125D8749600B8AEB8 /* Matrix+Equatable.swift in Sources */,
 				C70613F425D8749600B8AEB8 /* Node.swift in Sources */,
-				C7804E0225D8510000CB4466 /* Color.swift in Sources */,
 				C70613F725D8749600B8AEB8 /* Index+Equatable.swift in Sources */,
+				C795EE7725DAADD20088AB0F /* RGBA+Equatable.swift in Sources */,
 				C70613F225D8749600B8AEB8 /* Matrix.swift in Sources */,
 				C70613F825D8749600B8AEB8 /* Index+Hashable.swift in Sources */,
+				C795EE7D25DAB1400088AB0F /* Color+RGBA.swift in Sources */,
+				C795EE7125DAAD600088AB0F /* RGBA+CustomStringConvertible.swift in Sources */,
 				C70613F525D8749600B8AEB8 /* Index.swift in Sources */,
 				C70613ED25D8749600B8AEB8 /* Matrix+Double.swift in Sources */,
 				C706140125D8763400B8AEB8 /* CGPoint+Common.swift in Sources */,
+				C795EE6B25DAACEB0088AB0F /* RGBA.swift in Sources */,
 				C706140425D8763400B8AEB8 /* BooleanOperable.swift in Sources */,
 				C70613EE25D8749600B8AEB8 /* Matrix+CustomStringConvertible.swift in Sources */,
+				C795EE7A25DAB0D50088AB0F /* RGBA+Color.swift in Sources */,
 				C70613EB25D8749600B8AEB8 /* MatrixError.swift in Sources */,
 				C70613F025D8749600B8AEB8 /* Matrix+Float.swift in Sources */,
 				C70613F625D8749600B8AEB8 /* Index+Operation.swift in Sources */,
