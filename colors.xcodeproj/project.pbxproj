@@ -38,6 +38,7 @@
 		C795EE7A25DAB0D50088AB0F /* RGBA+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C795EE7925DAB0D50088AB0F /* RGBA+Color.swift */; };
 		C795EE7D25DAB1400088AB0F /* Color+RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = C795EE7C25DAB1400088AB0F /* Color+RGBA.swift */; };
 		C795EE8025DAB1890088AB0F /* RGBA+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C795EE7F25DAB1890088AB0F /* RGBA+Operation.swift */; };
+		C795EE8C25DAB4930088AB0F /* Trigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C795EE8B25DAB4930088AB0F /* Trigger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -85,6 +86,7 @@
 		C795EE7925DAB0D50088AB0F /* RGBA+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RGBA+Color.swift"; sourceTree = "<group>"; };
 		C795EE7C25DAB1400088AB0F /* Color+RGBA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+RGBA.swift"; sourceTree = "<group>"; };
 		C795EE7F25DAB1890088AB0F /* RGBA+Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RGBA+Operation.swift"; sourceTree = "<group>"; };
+		C795EE8B25DAB4930088AB0F /* Trigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trigger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +232,7 @@
 				C70613E325D8749500B8AEB8 /* Index */,
 				C70613D325D8749500B8AEB8 /* Matrix */,
 				C70613DF25D8749500B8AEB8 /* Node */,
+				C795EE8E25DAB4990088AB0F /* Trigger */,
 			);
 			path = colors;
 			sourceTree = "<group>";
@@ -263,6 +266,14 @@
 				C795EE6D25DAAD340088AB0F /* RGBAKeys.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		C795EE8E25DAB4990088AB0F /* Trigger */ = {
+			isa = PBXGroup;
+			children = (
+				C795EE8B25DAB4930088AB0F /* Trigger.swift */,
+			);
+			path = Trigger;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +340,7 @@
 				C795EE8025DAB1890088AB0F /* RGBA+Operation.swift in Sources */,
 				C7804DFB25D8509F00CB4466 /* main.swift in Sources */,
 				C70613F925D8749600B8AEB8 /* Index+CustomStringConvertible.swift in Sources */,
+				C795EE8C25DAB4930088AB0F /* Trigger.swift in Sources */,
 				C70613EF25D8749600B8AEB8 /* Matrix+Codable.swift in Sources */,
 				C706140625D8769100B8AEB8 /* Routable.swift in Sources */,
 				C706140325D8763400B8AEB8 /* Set+Common.swift in Sources */,
